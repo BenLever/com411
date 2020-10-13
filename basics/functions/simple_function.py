@@ -4,6 +4,3 @@ def listen():
   print("That was a loud", sound)
 
 listen()
-
-
-
