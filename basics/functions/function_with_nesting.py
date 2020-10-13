@@ -7,6 +7,3 @@ def identify():
     print("We will be fine")
 
 identify()
-
-
-
