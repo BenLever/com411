@@ -9,6 +9,3 @@ if len(letter) == 1:
 
 elif len(letter) != 1:
   print("Please enter a single letter")
-
-
-
