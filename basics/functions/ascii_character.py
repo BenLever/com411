@@ -9,6 +9,3 @@ if(32<=ascii<=126):
 
 elif not(32<=ascii<=126):
   print("Please enter an ASCII code in the range 32-126")
-
-
-
