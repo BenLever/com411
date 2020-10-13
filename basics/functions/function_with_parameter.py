@@ -10,5 +10,3 @@ def escape_by(plan):
 
 plan = input()
 escape_by(plan)
-
-
