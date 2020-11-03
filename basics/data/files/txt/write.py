@@ -5,8 +5,8 @@ def search(filepath):
 
   with open(filepath) as file:
     for line in file:
-      if line.startwith("Section"):
-        split = line.split(:)
+      if (line.startswith("Section")):
+        split = line.split(":")
         sections.append(split[1][:-1])
       else:
         books.append(line[:-1])
@@ -17,23 +17,14 @@ def search(filepath):
 
 def save(filepath,data):
   print("Saving...")
-  sections = ""
-  books = ""
 
   with open(filepath,"w")as file:
-    sections =+ "Sections: "
-    for section in data[0]
-      sections += section [-1] +","
-    books += "Books: "
-    for book in data[1]
-      books = book +","
-
-    file.write(sections[:-2])
-    file.write(books[:-2])
+    file.write(f"Sections: {data[1]}")
+    file.write(f"Books: {data[1]}")
     print("Done!")
 
-def run()
-   data = search("basics/data/files/txt/book.txt")
-   data2 = save("basics/data/files/txt/section-books.txt")
+def run():
+   data = search("basics/data/files/txt/books.txt")
+   save("basics/data/files/txt/section-books.txt", data)
 
 run()
