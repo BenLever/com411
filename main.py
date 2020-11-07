@@ -1,24 +1,46 @@
-def short_pattern():
-  pattern = {"sequence": "101", "occurences": 5}
-  return pattern
+def gang():
+  print("Loading gang...")
+  friends = ["Scooby Doo",
+  "Shaggy Rogers",
+  "Fred Jones",
+  "Daphne Blake",
+  "Velma Dinkley"
+  ]
+  print(friends)
+  print("...Done!")
+  return friends
 
-def medium_pattern():
-  pattern = {"sequence":"111000", "occurrences": 25}
-  return pattern
+gang()
 
-def long_pattern():
-  pattern = {"sequence":"1100110011001100", "occurrences":50}
-  return pattern
+def gang():
+  friends = ["Scooby Doo",
+  "Shaggy Rogers",
+  "Fred Jones",
+  "Daphne Blake",
+  "Velma Dinkley"
+  ]
+  return friends
 
-def run():
-  print("Analysing Patterns...")
-  patterns = {
-    "short sequence":short_pattern(),
-    "medium sequence":medium_pattern(),
-    "long sequence":long_pattern()
-  }
+def phrases(friends):
+  quotes = {}
+  for friend in friends:
+    print(f"What does {friend} say?")
+    quote = str(input())
+    quotes.update({friend:quote})
+  return quotes
 
-  for key, value in patterns.items():
-    print(f"{key}: {value}")
+friends = gang()
+quotes = phrases(friends)
+print(f"\nPhrases: {quotes}\n")
 
-run()
+def save(quotes):
+  with open(quotes.txt, "w")as file:
+    for friend, quote in quotes.item():
+      file.write(f"{friend}:{quote}")
+
+save(quotes) 
+print("The file contains...")
+file = open("quotes.txt")
+print(file.read())
+file.close()
+
