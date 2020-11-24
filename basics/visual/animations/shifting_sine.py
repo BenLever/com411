@@ -7,7 +7,7 @@ fig, ax = plt.subplots()
 
 def animate(frame):
   ax.cla()
-  ax.set_xlim(0, np.pi)
+  ax.set_xlim(0,2*np.pi)
   ax.set_ylim(-1, 1)
   x = np.arange(0, 2 * np.pi, 0.01)
   y = np.sin(x + frame/50)
@@ -16,7 +16,7 @@ def animate(frame):
 
 def run():
   global fig
-  simple_animation = animation.FuncAnimation(fig, animate, frames=720, interval=10)
+  simple_animation = animation.FuncAnimation(fig, animate, frames=100, interval=10)
   plt.show()
 
 
