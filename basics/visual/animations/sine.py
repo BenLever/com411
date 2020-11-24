@@ -6,11 +6,10 @@ fig, ax = plt.subplots()
 
 
 def animate(frame):
-  ax.cla()
-  ax.set_xlim(0, np.pi)
+  ax.set_xlim(0, 720)
   ax.set_ylim(-1, 1)
-  x = np.arange(0, 2 * np.pi, 0.01)
-  y = np.sin(x + frame/50)
+  x = np.arange(0,frame)
+  y = np.sin(x * (np.pi/180))
   ax.plot(x, y, 'r')
 
 
