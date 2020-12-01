@@ -21,4 +21,3 @@ class Human:
 
   def display(self):
     print(f"I am {self.name}")
-
