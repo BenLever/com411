@@ -3,6 +3,7 @@ from inhabitant import Inhabitant
 class Human(Inhabitant):
 
   def __init__(self, name, age):
+    #super().__init__(name, age)
     self.name = name
     self.age = age
     self.energy = Inhabitant.MAX_ENERGY

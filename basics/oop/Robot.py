@@ -3,6 +3,7 @@ from inhabitant import Inhabitant
 class Robot:
   laws = "Protect, Obey and Survive"
 
+  @staticmethod
   def the_laws(Inhabitant):
     print(Robot.laws)
 
@@ -18,4 +19,4 @@ if (__name__ == "__main__"):
   robot = Robot()
 
   # display the current state of the object
-  print(str(human))
+  print(repr(robot))
